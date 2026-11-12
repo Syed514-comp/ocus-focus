@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Ocus Focus",
+  "version": "1.0.0",
+  "identifier": "com.ocusfocus.app",
+  "build": {
+    "frontendDist": "../web"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Ocus Focus",
+        "width": 1000,
+        "height": 720,
+        "minWidth": 760,
+        "minHeight": 600,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis",
+      "appimage",
+      "deb",
+      "dmg"
+    ],
+    "category": "Productivity",
+    "shortDescription": "A focused work and break timer",
+    "longDescription": "A focused work and break timer with configurable sessions and optional eye-health reminders.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/256x256.png",
+      "icons/icon.ico",
+      "icons/icon.icns"
+    ]
+  }
+}

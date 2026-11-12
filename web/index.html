@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0b1020">
+
+    <title>Ocus Focus</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="focus.css">
+    <script src="ocus-focus.js" defer></script>
+</head>
+
+<body>
+
+<main id="app-container">
+
+    <!-- =========================================================
+         PAGE 1 — MODE SELECTION
+         ========================================================= -->
+
+    <section id="page-mode-selection">
+
+        <div class="hero-section">
+
+            <div class="brand">
+                <div class="brand-mark">O</div>
+                <span>OCUS FOCUS</span>
+            </div>
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    FOCUS • RECOVER • REPEAT
+                </span>
+
+                <h1 id="main-title">
+                    Welcome,<br>
+                    <span>architect of the future.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Choose a focus rhythm that matches the way you work.
+                    Build momentum without burning yourself out.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div id="modes-container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">01</span>
+                    <h2>Select your mode</h2>
+                </div>
+
+                <p>
+                    Choose a proven rhythm or create your own.
+                </p>
+            </div>
+
+
+            <div id="pre-built-modes">
+
+                <!-- POMODORO -->
+
+                <button
+                    id="Pomodoro-container"
+                    class="card mode-card"
+                    type="button"
+                >
+
+                    <div class="mode-number">01</div>
+
+                    <div class="mode-content">
+
+                        <div class="mode-top">
+                            <h3 id="Pomodoro-title">
+                                Pomodoro
+                            </h3>
+
+                            <span class="duration-badge">
+                                25 / 5
+                            </span>
+                        </div>
+
+                        <p id="Pomodoro-details">
+                            25 minutes of focused work followed by
+                            a 5-minute recovery period.
+                        </p>
+
+                        <div class="mode-footer">
+                            <span>Deep focus</span>
+                            <span>→</span>
+                        </div>
+
+                    </div>
+
+                </button>
+
+
+                <!-- 52 / 17 -->
+
+                <button
+                    id="FiftyTwoSeventeen-container"
+                    class="card mode-card"
+                    type="button"
+                >
+
+                    <div class="mode-number">02</div>
+
+                    <div class="mode-content">
+
+                        <div class="mode-top">
+                            <h3 id="FiftyTwoSeventeen-title">
+                                52 / 17 Rule
+                            </h3>
+
+                            <span class="duration-badge">
+                                52 / 17
+                            </span>
+                        </div>
+
+                        <p id="FiftyTwoSeventeen-details">
+                            A longer concentration period followed
+                            by a substantial recovery break.
+                        </p>
+
+                        <div class="mode-footer">
+                            <span>Sustained output</span>
+                            <span>→</span>
+                        </div>
+
+                    </div>
+
+                </button>
+
+
+                <!-- ANIMEDORO -->
+
+                <button
+                    id="Animedoro-container"
+                    class="card mode-card"
+                    type="button"
+                >
+
+                    <div class="mode-number">03</div>
+
+                    <div class="mode-content">
+
+                        <div class="mode-top">
+                            <h3 id="Animedoro-title">
+                                Animedoro
+                            </h3>
+
+                            <span class="duration-badge">
+                                50 / 20
+                            </span>
+                        </div>
+
+                        <p id="Animedoro-details">
+                            Longer uninterrupted focus with an
+                            extended recovery window.
+                        </p>
+
+                        <div class="mode-footer">
+                            <span>Flow state</span>
+                            <span>→</span>
+                        </div>
+
+                    </div>
+
+                </button>
+
+
+                <!-- ULTRADIAN -->
+
+                <button
+                    id="Ultradian-container"
+                    class="card mode-card"
+                    type="button"
+                >
+
+                    <div class="mode-number">04</div>
+
+                    <div class="mode-content">
+
+                        <div class="mode-top">
+                            <h3 id="Ultradian-title">
+                                Ultradian Rhythm
+                            </h3>
+
+                            <span class="duration-badge">
+                                90 / 20
+                            </span>
+                        </div>
+
+                        <p id="Ultradian-details">
+                            A long deep-work cycle designed for
+                            complex technical and creative tasks.
+                        </p>
+
+                        <div class="mode-footer">
+                            <span>Deep work</span>
+                            <span>→</span>
+                        </div>
+
+                    </div>
+
+                </button>
+
+
+                <!-- CUSTOM -->
+
+                <button
+                    id="custom-mode"
+                    class="card mode-card custom-card"
+                    type="button"
+                >
+
+                    <div class="mode-number">05</div>
+
+                    <div class="mode-content">
+
+                        <div class="mode-top">
+
+                            <h3 id="custom-mode-title">
+                                Custom Setup
+                            </h3>
+
+                            <span class="duration-badge custom-badge">
+                                CUSTOM
+                            </span>
+
+                        </div>
+
+                        <p id="custom-mode-details">
+                            Build your own work and recovery rhythm
+                            down to the second.
+                        </p>
+
+                        <div class="mode-footer">
+                            <span>Create your rhythm</span>
+                            <span>→</span>
+                        </div>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         PAGE 2 — CUSTOM MODE
+         ========================================================= -->
+
+    <section
+        id="custom-mode-landing-page"
+        hidden
+    >
+
+        <button
+            id="custom-back-button"
+            class="text-button"
+            type="button"
+        >
+            ← Back
+        </button>
+
+
+        <div class="custom-header">
+
+            <span class="section-label">
+                CUSTOM MODE
+            </span>
+
+            <h2>
+                Build your rhythm.
+            </h2>
+
+            <p>
+                Enter your work duration first, then your break duration.
+            </p>
+
+        </div>
+
+
+        <div class="custom-time-area">
+
+            <!-- WORK -->
+
+            <div class="time-section">
+
+                <div class="time-section-header">
+
+                    <span>WORK</span>
+
+                    <span id="work-input-status">
+                        ENTER DURATION
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="selected-work-time-container"
+                    class="time-cards"
+                >
+
+                    <div class="selected-time-card">
+
+                        <div id="selected-hour">
+                            00
+                        </div>
+
+                        <span>
+                            Hours
+                        </span>
+
+                    </div>
+
+
+                    <div class="time-separator">
+                        :
+                    </div>
+
+
+                    <div class="selected-time-card">
+
+                        <div id="selected-minute">
+                            00
+                        </div>
+
+                        <span>
+                            Minutes
+                        </span>
+
+                    </div>
+
+
+                    <div class="time-separator">
+                        :
+                    </div>
+
+
+                    <div class="selected-time-card">
+
+                        <div id="selected-second">
+                            00
+                        </div>
+
+                        <span>
+                            Seconds
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BREAK -->
+
+            <div class="time-section break-section">
+
+                <div class="time-section-header">
+
+                    <span>BREAK</span>
+
+                    <span id="break-input-status">
+                        LOCKED
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="selected-break-time-container"
+                    class="time-cards"
+                >
+
+                    <div class="selected-time-card">
+
+                        <div id="selected-break-hour-value">
+                            00
+                        </div>
+
+                        <span>
+                            Hours
+                        </span>
+
+                    </div>
+
+
+                    <div class="time-separator">
+                        :
+                    </div>
+
+
+                    <div class="selected-time-card">
+
+                        <div id="selected-break-minute-value">
+                            00
+                        </div>
+
+                        <span>
+                            Minutes
+                        </span>
+
+                    </div>
+
+
+                    <div class="time-separator">
+                        :
+                    </div>
+
+
+                    <div class="selected-time-card">
+
+                        <div id="selected-break-second-value">
+                            00
+                        </div>
+
+                        <span>
+                            Seconds
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button
+            id="toggle-button"
+            class="primary-action"
+            type="button"
+            disabled
+        >
+            <span>Continue</span>
+            <span>→</span>
+        </button>
+
+
+        <div id="input-keypad">
+
+            <div id="keypad-buttons">
+
+                <button
+                    class="keypad-button"
+                    data-key="1"
+                    type="button"
+                >
+                    1
+                </button>
+
+                <button
+                    class="keypad-button"
+                    data-key="2"
+                    type="button"
+                >
+                    2
+                </button>
+
+                <button
+                    class="keypad-button"
+                    data-key="3"
+                    type="button"
+                >
+                    3
+                </button>
+
+
+                <button
+                    class="keypad-button"
+                    data-key="4"
+                    type="button"
+                >
+                    4
+                </button>
+
+                <button
+                    class="keypad-button"
+                    data-key="5"
+                    type="button"
+                >
+                    5
+                </button>
+
+                <button
+                    class="keypad-button"
+                    data-key="6"
+                    type="button"
+                >
+                    6
+                </button>
+
+
+                <button
+                    class="keypad-button"
+                    data-key="7"
+                    type="button"
+                >
+                    7
+                </button>
+
+                <button
+                    class="keypad-button"
+                    data-key="8"
+                    type="button"
+                >
+                    8
+                </button>
+
+                <button
+                    class="keypad-button"
+                    data-key="9"
+                    type="button"
+                >
+                    9
+                </button>
+
+
+                <button
+                    class="keypad-button utility-key"
+                    data-key="clear"
+                    type="button"
+                >
+                    C
+                </button>
+
+                <button
+                    class="keypad-button"
+                    data-key="0"
+                    type="button"
+                >
+                    0
+                </button>
+
+                <button
+                    class="keypad-button utility-key"
+                    data-key="backspace"
+                    type="button"
+                >
+                    ⌫
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         PAGE 3 — EYE HEALTH
+         ========================================================= -->
+
+    <section
+        id="page-eye-health"
+        hidden
+    >
+
+        <button
+            id="btn-back-to-modes"
+            class="text-button"
+            type="button"
+        >
+            ← Back
+        </button>
+
+
+        <div class="eye-health-content">
+
+            <div class="eye-icon">
+                ◉
+            </div>
+
+            <span class="section-label">
+                OPTIONAL
+            </span>
+
+            <h2>
+                Look after your eyes.
+            </h2>
+
+            <p>
+                Would you like Ocus Focus to enable eye-health
+                reminders during your session?
+            </p>
+
+
+            <div id="eye-health-options">
+
+                <button
+                    id="yes-button"
+                    class="choice-button"
+                    type="button"
+                >
+                    <span>Yes</span>
+                    <small>Enable reminders</small>
+                </button>
+
+
+                <button
+                    id="no-button"
+                    class="choice-button"
+                    type="button"
+                >
+                    <span>No</span>
+                    <small>Focus without reminders</small>
+                </button>
+
+            </div>
+
+
+            <button
+                id="btn-start-session"
+                class="primary-action"
+                type="button"
+                disabled
+            >
+                <span>Start Focus Session</span>
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         PAGE 4 — ACTIVE TIMER
+         ========================================================= -->
+
+    <section
+        id="page-active-timer"
+        hidden
+    >
+
+        <div class="timer-topbar">
+
+            <button
+                id="back-to-session"
+                class="text-button"
+                type="button"
+            >
+                ← Exit session
+            </button>
+
+            <div id="timer-mode-label">
+                FOCUS SESSION
+            </div>
+
+        </div>
+
+
+        <div class="timer-content">
+
+            <div
+                id="phase-label"
+                class="phase-label"
+            >
+                WORK
+            </div>
+
+
+            <div
+                id="timer-countdown"
+                aria-live="polite"
+            >
+                00:00
+            </div>
+
+
+            <div
+                id="timer-status"
+            >
+                Deep focus
+            </div>
+
+
+            <div class="timer-controls">
+
+                <button
+                    id="pause-unpause"
+                    class="timer-control primary-control"
+                    type="button"
+                >
+                    ▶
+                </button>
+
+                <button
+                    id="restart"
+                    class="timer-control"
+                    type="button"
+                >
+                    ↻
+                </button>
+
+            </div>
+
+
+            <div class="timer-hint">
+                <span id="session-phase-indicator">
+                    WORK
+                </span>
+
+                <span>•</span>
+
+                <span>
+                    Stay focused
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         FULL SCREEN PHASE OVERLAY
+         ========================================================= -->
+
+    <div
+        id="phase-overlay"
+        hidden
+        aria-live="assertive"
+    >
+
+        <div class="overlay-glow"></div>
+
+        <div class="overlay-content">
+
+            <div
+                id="overlay-kicker"
+                class="overlay-kicker"
+            >
+                SESSION UPDATE
+            </div>
+
+            <div
+                id="overlay-title"
+                class="overlay-title"
+            >
+                WORK COMPLETE
+            </div>
+
+            <div
+                id="overlay-message"
+                class="overlay-message"
+            >
+                Your break begins shortly.
+            </div>
+
+            <div
+                id="overlay-countdown"
+                class="overlay-countdown"
+            >
+                3
+            </div>
+
+
+        <div id="overlay-actions" hidden>
+
+            <button
+                id="overlay-restart"
+                class="primary-action overlay-button"
+                type="button"
+            >
+                <span>Start Same Session Again</span>
+                <span>↻</span>
+            </button>
+
+            <button
+                id="overlay-continue"
+                class="secondary-action overlay-button"
+                type="button"
+            >
+                <span>Continue to Home</span>
+                <span>→</span>
+            </button>
+
+        </div>
+
+        </div>
+
+    </div>
+
+
+</main>
+
+</body>
+</html>
