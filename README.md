@@ -1,46 +1,69 @@
 # Ocus Focus
 
-A focused work-and-break timer built with HTML, CSS and vanilla JavaScript.
+**Make time for focused work. Take better breaks.**
 
-## Project structure
+Ocus Focus is a simple productivity timer designed to help you structure your work sessions, take regular breaks and maintain a healthier working rhythm.
 
-- `web/` — application interface and browser favicon
-- `src-tauri/` — Tauri 2 desktop configuration and icon assets
-- `capacitor.config.json` — Capacitor configuration for Android
-- `.github/workflows/` — desktop and Android build workflows
+Choose a focus method, start your timer and let Ocus Focus guide you through your work and rest periods.
 
-## Desktop builds
+## Download Ocus Focus
 
-Install the prerequisites for [Tauri 2](https://v2.tauri.app/start/prerequisites/), then:
+Choose the version for your device:
 
-```bash
-npm install
-npm run desktop:build
-```
+| Platform | Download |
+|---|---|
+| **Windows** | [Download Windows Installer (.exe)](https://github.com/Syed514-comp/ocus-focus/releases/download/v1.0.0/Ocus.Focus_1.0.0_x64-setup.exe) |
+| **macOS** | [Download Apple Silicon (.dmg)](https://github.com/Syed514-comp/ocus-focus/releases/download/v1.0.0/Ocus%20Focus_1.0.0_aarch64.dmg) |
+| **Linux** | [AppImage](https://github.com/Syed514-comp/ocus-focus/releases/download/v1.0.0/Ocus%20Focus_1.0.0_amd64.AppImage) · [Debian/Ubuntu (.deb)](https://github.com/Syed514-comp/ocus-focus/releases/download/v1.0.0/Ocus%20Focus_1.0.0_amd64.deb) |
+| **Android** | [Download APK](https://github.com/Syed514-comp/ocus-focus/releases/tag/v1.0.0) |
 
-The configured desktop bundle targets are Windows NSIS installer, Linux AppImage and DEB, and macOS DMG.
+[View all releases](https://github.com/Syed514-comp/ocus-focus/releases)
 
-## Android
+*The current macOS build supports Apple Silicon Macs (M-series).*
 
-Install Android Studio and the Android SDK, then:
+## Installation
 
-```bash
-npm install
-npx cap add android
-npm run mobile:sync
-npx cap open android
-```
+**Windows**
+1. Download the `.exe` installer.
+2. Open the downloaded file.
+3. Follow the installation instructions.
 
-Build an APK from Android Studio or with Gradle. The GitHub Actions workflow is intended to build an Android debug APK.
+**macOS**
+1. Download the `.dmg` file.
+2. Open it.
+3. Move Ocus Focus into your Applications folder.
 
-## App icons
+**Linux**
+- AppImage: Download the file, make it executable and launch it.
+- Debian/Ubuntu: Download the `.deb` package and open it to install.
 
-The supplied Ocus Focus artwork is used for the desktop bundle icons and browser favicon. The original artwork is retained in `web/focus.jpg`; generated icon sizes are in `src-tauri/icons/`.
+**Android**
+1. Download the APK.
+2. Open the downloaded file.
+3. Allow installation from your browser or file manager if Android requests permission.
+4. Complete the installation.
 
-Android launcher resources still need to be generated/applied when the native Android project is created. iOS packaging is intentionally postponed.
+## Choose your focus method
 
-## Notes
+Ocus Focus includes several time-management methods:
 
-- The application uses vanilla JavaScript; no React is used.
-- Timer behavior has not intentionally been changed as part of packaging.
-- Build outputs have not yet been validated on each target operating system.
+- **Pomodoro** – 25 minutes of work followed by 5 minutes of rest.
+- **52/17 Rule** – 52 minutes of work followed by 17 minutes of rest.
+- **Animedoro** – 50 minutes of work followed by 20 minutes of rest.
+- **Ultradian Rhythm** – 90 minutes of work followed by 20 minutes of rest.
+- **Custom Setup** – Set your own work and break durations.
+
+## Features
+
+- Structured work and break sessions.
+- Customisable focus and break durations.
+- Pause, resume and restart controls.
+- Optional eye-health reminders during work sessions.
+- Sound alerts when sessions change.
+- Applications for Windows, macOS, Linux and Android.
+
+## Project
+
+Ocus Focus is an independent project. Suggestions, feedback and bug reports are welcome through [GitHub Issues](https://github.com/Syed514-comp/ocus-focus/issues).
+
+**Take control of your time. Focus with Ocus Focus.**
